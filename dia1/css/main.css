@@ -1,0 +1,49 @@
+
+#cards {
+    display: flex;
+}
+
+.card {
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    border: 2px solid #e4dfdf;
+    border-radius: 15px;
+}
+h1 {
+    margin-top: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:blueviolet;
+    font-size: 45px;
+}
+
+h3 {
+    color:rgb(82, 47, 255);
+    font-size: 35px;
+}
+
+#paragrapht {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: orange;
+}
+
+p {
+    color: blueviolet;
+}
+
+.blue {
+    color: rgb(4, 135, 217);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+}
+
+img {
+    width: 300px; 
+}

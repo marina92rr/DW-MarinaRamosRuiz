@@ -4,9 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
-
 }
-
 
 .logo {
     height: 50px;
@@ -28,6 +26,7 @@ ul {
 }
 
 li {
+    display: inline;
     list-style: none;
 }
 
@@ -45,23 +44,44 @@ a:hover {
     background-image: 
         linear-gradient(to right, rgb(43, 29, 38), rgba(255, 255, 255, 0)),
         url("/dia4/images/found.jpg");
-    background-size: cover;              /*ajusta img al maximo ancho */
-    height: calc(100vh - 125px);        /*Resta header/footer height */
+    background-size: cover;
+    height: calc(100vh - 125px);
     color: white;
     display: flex;
-    flex-direction: column;             /*pasa a columna */
-    justify-content: center;            /*Centra texto(al reves por flex direction) */
+    flex-direction: column;
+    justify-content: center;
 }
 
-.container>p, .container>h1 {
-    padding: 10px 100px;
+.container{
     width: 40%;
 }
 
+.container>p, .container>h1, .container>img, .container>button {
+    margin: 15px 100px;
+    
+
+}
+
 .container>img{
+    display: block;
     padding: 20px 100px;
     height: 200px;
 }
+
+button {
+    padding: 20px 40px;
+    border: none;
+    background-color: rgb(152, 42, 106);
+    color: white;
+    cursor: pointer;
+    border-radius: 1rem ;
+    font-size: medium;
+}
+
+button:hover {
+    background-color: rgb(151, 94, 127);
+}
+
 
 
 footer {

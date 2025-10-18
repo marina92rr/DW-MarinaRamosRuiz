@@ -7,12 +7,9 @@
 
 }
 
-h1 {
-    margin: 20px;
-}
 
 .logo {
-    height: 60px;
+    height: 50px;
     width: auto;
 }
 
@@ -31,7 +28,6 @@ ul {
 }
 
 li {
-    display: inline;
     list-style: none;
 }
 
@@ -49,12 +45,12 @@ a:hover {
     background-image: 
         linear-gradient(to right, rgb(43, 29, 38), rgba(255, 255, 255, 0)),
         url("/dia4/images/found.jpg");
-    background-size: cover;
-    height: calc(100vh - 125px);
+    background-size: cover;              /*ajusta img al maximo ancho */
+    height: calc(100vh - 125px);        /*Resta header/footer height */
     color: white;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column;             /*pasa a columna */
+    justify-content: center;            /*Centra texto(al reves por flex direction) */
 }
 
 .container>p, .container>h1 {
@@ -62,12 +58,10 @@ a:hover {
     width: 40%;
 }
 
-img{
+.container>img{
     padding: 20px 100px;
     height: 200px;
 }
-
-
 
 
 footer {

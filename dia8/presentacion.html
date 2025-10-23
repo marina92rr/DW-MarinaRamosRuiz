@@ -1,0 +1,131 @@
+<!DOCTYPE hmtl>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Día 7 - Tron - Presentacion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/main.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+</head>
+
+<body>
+    <!-- Cabecera de la página -->
+    <header class="cabecera">
+        <img class="logo" src="images/logo.png" alt="Logo-tron">
+        <!-- Enlaces de la cabecera -->
+        <nav>
+            <ul class="sidebar">
+                <li class="sidebar__list"><a href="index.html" class="sidebar__link">Inicio</a></li>
+                <li class="sidebar__list"><a href="noticias.html" class="sidebar__link">Noticias</a></li>
+                <li class="sidebar__list"><a href="presentacion.html"class="sidebar__link sidebar__link--active">Presentación</a></li>
+                <li class="sidebar__list"><a href="contacto.html" class="sidebar__link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- cuerpo de la página -->
+    <main class="Main">
+        <h1 class="title">Presentación de la web Tron: Ares</h1>
+        <!-- Presentación -->
+        <div class="div--flex">
+            <div class="presentation">
+                <p class="paragraphs">
+                    La web tiene un contenido cinematográfico sobre una película que se estrenó hace poco.
+                    Tron: Ares es una película estadounidense de ciencia ficción producida por Walt Disney Pictures y distribuida por Walt Disney Studios Motion Pictures. Sirve como secuela independiente de Tron y Tron: Legacy. La película está dirigida por Joachim Rønning, con una historia escrita por Steven Lisberger y Bonnie MacBird a partir de un guion de Jesse Wigutow y producida por Jared Leto, Justin Springer, Jeffrey Silver y Emma Ludbrook.
+                    Nuestro proyecto, esta realizado con lenguaje de etiquetado(Html) y CSS(hoja de estilos) y
+                    la web consta de 4 secciones: Inicio, noticias, Presentación y contacto.
+                </p>
+                <p class="paragraphs">Las páginas se dividen en 3 secciones principales:</p>
+
+                <div class="presentation__web"> 
+                    <details>
+                        <summary class="presentation__sumary">Header</summary>
+                        <p class="sumary__paragrapht">Se usa en todas las páginas con el mismo estilo. Color de fondo black, display flex y flex wrap para ajustar los enlaces</p>
+                    </details>
+                    <details>
+                        <summary class="presentation__sumary">Body</summary>
+                        <p class="sumary__paragrapht">Varía en cada sección</p>
+                    </details>
+                    <details>
+                        <summary class="presentation__sumary">Footer</summary>
+                        <p class="sumary__paragrapht">usamos un estilo parecido al Header, pero justificamos el cotenindo al centro.</p>
+                    </details>
+                    
+                </div>
+
+                <div class="presentation__web">
+                    <div class="presentation__section">
+                        <section>
+                            <h2>Inicio</h2>
+                            <p>En la parte de body usamos un div principal y 4 div con
+                                imágen y título cada uno. Usamos para el
+                                div principal display: flex y ajustamos al máximo
+                                con space-between. Los 4 div tienen un :hover que agranda la imagen al pasar el
+                                cursor.
+                            </p>
+                            <a href="index.html">Inicio</a>
+                        </section>
+                    </div>
+
+                    <div class="presentation__img">
+                        <img src="images/img-inicio.jpg" alt="">
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="presentation">
+                    <div class="presentation__img">
+                        <img src="images/img-noticias.jpg" alt="">
+                    </div>
+                    <div class="presentation__section">
+                        <section>
+                            <h2>Noticias</h2>
+                            <p>En noticias, creamos un div, con un título, 3 párrafos y 1 imágen. Para esta página usé
+                                untamaño de 70% y lo centré con justify-content.
+                            </p>
+                            <a href="noticias.html"></a>
+                        </section>
+                    </div>
+                </div>
+                <hr>
+                <div class="presentation">
+                    <div class="presentation__section">
+                        <section>
+                            <h2>Contacto</h2>
+                            <p>Por útimo, en contacto, se divide por título h1, un div principal para dar display: flex y dentro 2 div hijos, uno para datos y otro un formulario. El formulario esta compuesto por input, tipo text y un button.</p>
+                            <a href="contacto.html"></a>
+                        </section>
+                    </div>
+
+                    <div class="presentation__img">
+                        <img src="images/img-contacto.jpg" alt="">
+                    </div>
+                </div>
+                <p>Los colores a destacar son red, black, y algunas variaciones de esos colores, como rgb(146, 1, 1)</p>
+            </div>
+        </div>
+
+
+    </main>
+    <!-- Pie de la página -->
+    <footer class="Footer">
+        <!-- Enlaces del pie -->
+        <nav>
+            <ul class="sidebar">
+                <li class="sidebar__list"><a href="#" class="sidebar__link">Facebook</a></li>
+                <li class="sidebar__list"><a href="#" class="sidebar__link">Instagram</a></li>
+                <li class="sidebar__list"><a href="#" class="sidebar__link">Twiter</a></li>
+                <li class="sidebar__list"><a href="#" class="sidebar__link">Whatsapp</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

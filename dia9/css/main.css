@@ -17,7 +17,7 @@ h1 {
     text-align: center;
 }
 
-h2 {
+h3 {
     margin: 40px;
 }
 
@@ -26,21 +26,21 @@ hr {
 }
 
 /* Nivel 1 */
-.found--greenyellow {
+.level__greenyellow {
     background-color: greenyellow;
     width: 50vw;
     height: 50vh;
     border: 1px solid rgb(42, 29, 29);
 }
 
-.found--pink {
+.level__pink {
     background-color: pink;
     width: 50vh;
     height: 50vw;
     border: 1px solid rgb(42, 29, 29);
 }
 
-.found--blue {
+.level__blue {
     background-color: rgb(0, 191, 255);
     width: 20em;
     height: 20em;
@@ -49,7 +49,7 @@ hr {
 
 
 /* Nivel 2 */
-.found--color {
+.level__color {
     margin: 40px 0;
     border: 1px solid black;
     width: 100%;
@@ -57,36 +57,35 @@ hr {
 }
 
 @media (max-width: 480px) {
-    .found--color {
+    .level__color {
         background-color: red;
     }
 }
 
 @media (min-width: 481px) {
-    .found--color {
+    .level__color {
         background-color: yellow;
     }
 }
 
 @media (min-width : 780px) {
-    .found--color {
+    .level__color {
         background-color: greenyellow;
     }
 }
 
 @media (min-width : 1200px) {
-    .found--color {
+    .level__color {
         background-color: blue;
     }
 }
 
-.found--print {
+.level__print {
     background-color: red;
     border: 1px solid black;
     width: 50vw;
     height: 50vw;
-    print-color-adjust: exact;
-    /*Para imprimir el color exacto*/
+    print-color-adjust: exact;      /*Para imprimir el color exacto*/
 }
 
 @media print {
@@ -96,7 +95,7 @@ hr {
 }
 
 /* Nivel 3 */
-.container {
+.level__container {
     container-type: inline-size;
 }
 

@@ -40,24 +40,29 @@
                     Nuestro proyecto, esta realizado con lenguaje de etiquetado(Html) y CSS(hoja de estilos) y
                     la web consta de 4 secciones: Inicio, noticias, Presentación y contacto.
                 </p>
+
+                 <div class="banner">
+                    <img src="images/banner.jpg" alt="">
+                </div>
+
                 <p class="paragraphs">Las páginas se dividen en 3 secciones principales:</p>
 
                 <div class="presentation__web"> 
-                    <details>
+                    <details class="presentation__details">
                         <summary class="presentation__sumary">Header</summary>
                         <p class="sumary__paragrapht">Se usa en todas las páginas con el mismo estilo. Color de fondo black, display flex y flex wrap para ajustar los enlaces</p>
                     </details>
-                    <details>
+                    <details class="presentation__details">
                         <summary class="presentation__sumary">Body</summary>
                         <p class="sumary__paragrapht">Varía en cada sección</p>
                     </details>
-                    <details>
+                    <details class="presentation__details">
                         <summary class="presentation__sumary">Footer</summary>
                         <p class="sumary__paragrapht">usamos un estilo parecido al Header, pero justificamos el cotenindo al centro.</p>
                     </details>
                 </div>
 
-                <div class="presentation__web">
+                <div class="presentation__web__page">
                     <div class="presentation__section">
                         <section>
                             <h2>Inicio</h2>
@@ -71,17 +76,20 @@
                         </section>
                     </div>
 
-                    <div class="presentation__img">
-                        <img src="images/img-inicio.jpg" alt="">
+                    <div class="presentation__modal">
+                        <button onClick="this.nextElementSibling.showModal()">Mostrar imagen</button>
+                        <dialog >
+                            <img src="images/img-inicio.jpg" alt="">
+                            <form>
+                                <button>ok</button>
+                            </form>
+                        </dialog>
                     </div>
                 </div>
 
                 <hr>
 
-                <div class="presentation">
-                    <div class="presentation__img">
-                        <img src="images/img-noticias.jpg" alt="">
-                    </div>
+                <div class="presentation__web__page">
                     <div class="presentation__section">
                         <section>
                             <h2>Noticias</h2>
@@ -91,9 +99,19 @@
                             <a href="noticias.html"></a>
                         </section>
                     </div>
+                    <div class="presentation__modal">
+                        <button onClick="this.nextElementSibling.showModal()">Mostrar imagen</button>
+                        <dialog >
+                            <img src="images/img-noticias.jpg" alt="">
+                            <form>
+                                <button>ok</button>
+                            </form>
+                        </dialog>
+                        
+                    </div>
                 </div>
                 <hr>
-                <div class="presentation">
+                <div class="presentation__web__page">
                     <div class="presentation__section">
                         <section>
                             <h2>Contacto</h2>
@@ -102,14 +120,19 @@
                         </section>
                     </div>
 
-                    <div class="presentation__img">
-                        <img src="images/img-contacto.jpg" alt="">
+                    <div class="presentation__modal">
+                        <button onClick="this.nextElementSibling.showModal()">Mostrar imagen</button>
+                        <dialog >
+                            <img src="images/img-contacto.jpg" alt="">
+                            <form>
+                                <button>ok</button>
+                            </form>
+                        </dialog>
+                        
                     </div>
                 </div>
-                <p>Los colores a destacar son red, black, y algunas variaciones de esos colores, como rgb(146, 1, 1)</p>
             </div>
         </div>
-
 
     </main>
     <!-- Pie de la página -->

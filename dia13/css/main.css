@@ -56,6 +56,7 @@ h2 {
 .container__img {
     display: flex;
     flex-wrap: wrap;
+    gap: 1rem;
     gap: 0 0 0 2rem;
 }
 
@@ -81,6 +82,7 @@ h2 {
 
 
 .cookies {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.726);
     text-align: center;
     border: none;
     position: fixed;
@@ -88,27 +90,27 @@ h2 {
     background-color: white;
 }
 
-.cookies img{
+.cookies img {
     width: 25px;
     height: 25px;
 }
 
-.cookies__p{
+.cookies__p {
     margin: 0.5rem;
     font-size: small;
 }
 
-.cookies form{
+.cookies form {
     display: flex;
     justify-content: center;
 }
 
-.cookies__button{
+.cookies__button {
     display: flex;
     align-items: center;
     color: white;
     padding: 5px;
     border-radius: 5px;
     background-color: rgb(255, 164, 164);
-    border: 1px solid  rgb(225, 140, 140);
+    border: 1px solid rgb(225, 140, 140);
 }

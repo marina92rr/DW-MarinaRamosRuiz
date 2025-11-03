@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 
 /* Cabecera de la página */
@@ -33,6 +34,7 @@
 }
 
 .section__scroll>div {
+    scroll-behavior: smooth;
     padding: 40px 0;
     height: calc(100vh - 150px);
     text-align: center;

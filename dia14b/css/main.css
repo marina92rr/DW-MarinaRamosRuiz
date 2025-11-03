@@ -1,0 +1,52 @@
+/* Reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cabecera de la página */
+.sidebar__ul {
+    height: 75px;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.sidebar__li {
+    list-style: none;
+}
+
+.sidebar__a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Cuerpo de la página */
+.section__scroll {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    height: calc(100vh - 150px);
+}
+
+.section__scroll>div {
+    padding: 40px 0;
+    height: calc(100vh - 150px);
+    text-align: center;
+    scroll-snap-align: start;
+}
+
+.Home {
+    background-color: rgb(238, 238, 238);
+}
+
+.News {
+   
+}
+
+.Gallery {
+    background-color: rgb(238, 238, 238);
+}

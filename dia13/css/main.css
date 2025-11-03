@@ -6,6 +6,7 @@
     font-family: "BBH Sans Hegarty", sans-serif;
 }
 
+/* header */
 .sidebar {
     position: sticky;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.455);
@@ -36,6 +37,7 @@
     color: white;
 }
 
+/* Cuerpo de la página */
 main {
     background-image: url(/dia13/images/found.jpg);
     background-size: cover;
@@ -79,7 +81,6 @@ h2 {
     width: 70%;
     text-align: center;
 }
-
 
 .cookies {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.726);

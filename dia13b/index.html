@@ -4,13 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Día 14- nivel 2</title>
+  <title>Día 13- nivel 3</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <script src="js/main.js" defer></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-
 </head>
 
 <body>
@@ -18,86 +17,112 @@
   <header>
     <nav class="sidebar">
       <ul class="sidebar__ul">
-        <li class="sidebar__li"><a href="#home" class="sidebar__a">Home</a></li>
-        <li class="sidebar__li"><a href="#News" class="sidebar__a">Noticias</a></li>
-        <li class="sidebar__li"><a href="#Gallery" class="sidebar__a">Galería</a></li>
+        <li class="sidebar__li"><a href="#home" class="sidebar__a" title="home" target="_blank"
+            rel="noreferrer">Home</a></li>
+        <li class="sidebar__li"><a href="#News" class="sidebar__a" title="news" target="_blank"
+            rel="noreferrer">Noticias</a></li>
+        <li class="sidebar__li"><a href="#Gallery" class="sidebar__a" title="gallery" target="_blank"
+            rel="noreferrer">Galería</a></li>
       </ul>
     </nav>
   </header>
   <!-- Cuerpo de la página -->
   <main>
-    <section class="section__scroll">
-      <div id="home" class="Home">
-        <h2>Bienvenido a Home</h2>
-        <div>
-          <p></p>
-          <figure>
-            <picture>
-              <source srcset="" type="image/webp">
-              <img src="" alt="">
-            </picture>
-          </figure>
-        </div>
+    <div class="section__scroll">
+      <div id="home" class="home">
+        <h2 class="home__title">Bienvenido</h2>
       </div>
 
-      <div id="News" class="News">
+      <div id="news" class="news">
         <h2>Noticias sobre</h2>
-
-      </div>
-
-      <div id="Gallery" class="Gallery">
-        <h2>Galería de fotos</h2>
-        <div>
+        <div class="new">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, corrupti delectus ab explicabo aut ratione
+            quas aspernatur illo cum dignissimos sequi qui aliquam ipsa eum quibusdam eligendi. Culpa, unde impedit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, corrupti delectus ab explicabo aut ratione
+            quas aspernatur illo cum dignissimos sequi qui aliquam ipsa eum quibusdam eligendi. Culpa, unde impedit.
+          </p>
           <figure>
             <picture>
-              <source srcset="" type="image/webp">
-              <img src="" alt="">
-            </picture>
-          </figure>
-          <figure>
-            <picture>
-              <source srcset="" type="image/webp">
-              <img src="" alt="">
-            </picture>
-          </figure>
-          <figure>
-            <picture>
-              <source srcset="" type="image/webp">
-              <img src="" alt="">
-            </picture>
-          </figure>
-          <figure>
-            <picture>
-              <source srcset="" type="image/webp">
-              <img src="" alt="">
-            </picture>
-          </figure>
-          <figure>
-            <picture>
-              <source srcset="" type="image/webp">
-              <img src="" alt="">
-            </picture>
-          </figure>
-          <figure>
-            <picture>
-              <source srcset="" type="image/webp">
-              <img src="" alt="">
+              <source srcset="images/beach.webp" type="image/webp">
+              <img src="images/beach.jpg" alt="">
             </picture>
           </figure>
         </div>
       </div>
-    </section>
+
+      <div id="gallery" class="galleries--flex">
+        <div class="galleries">
+          <h2>Galería de fotos</h2>
+          <div class="gallery">
+            <figure>
+              <picture>
+                <source srcset="images/img-1.webp" type="image/webp">
+                <img src="images/img-1.jpg" alt="">
+              </picture>
+            </figure>
+            <figure>
+              <picture>
+                <source srcset="images/img-2.webp" type="image/webp">
+                <img src="images/img-2.jpg" alt="">
+              </picture>
+            </figure>
+            <figure>
+              <picture>
+                <source srcset="images/img-3.webp" type="image/webp">
+                <img src="images/img-3.jpg" alt="">
+              </picture>
+            </figure>
+            <figure>
+              <picture>
+                <source srcset="images/img-4.webp" type="image/webp">
+                <img src="images/img-4.jpg" alt="">
+              </picture>
+            </figure>
+          </div>
+          <div class="gallery">
+            <figure>
+              <picture>
+                <source srcset="images/img-5.webp" type="image/webp">
+                <img src="images/img-5.jpg" alt="">
+              </picture>
+            </figure>
+            <figure>
+              <picture>
+                <source srcset="images/img-6.webp" type="image/webp">
+                <img src="images/img-6.jpg" alt="">
+              </picture>
+            </figure>
+            <figure>
+              <picture>
+                <source srcset="images/img-7.webp" type="image/webp">
+                <img src="images/img-7.jpg" alt="">
+              </picture>
+            </figure>
+            <figure>
+              <picture>
+                <source srcset="images/img-8.webp" type="image/webp">
+                <img src="images/img-8.jpg" alt="">
+              </picture>
+            </figure>
+          </div>
+        </div>
+      </div>
+      </section>
   </main>
+
   <!-- Pie de la página -->
   <footer>
     <nav class="sidebar--footer">
       <ul class="sidebar__ul">
-        <li class="sidebar__li"><a href="#" class="sidebar__a">Facebook</a></li>
-        <li class="sidebar__li"><a href="#" class="sidebar__a">Instagram</a></li>
-        <li class="sidebar__li"><a href="#" class="sidebar__a">Twitter</a></li>
+        <li class="sidebar__li"><a href="#" class="sidebar__a" title="Facebook" target="_blank"
+            rel="noreferrer">Facebook</a></li>
+        <li class="sidebar__li"><a href="#" class="sidebar__a" title="instagram" target="_blank"
+            rel="noreferrer">Instagram</a></li>
+        <li class="sidebar__li"><a href="#" class="sidebar__a" title="Twitter" target="_blank"
+            rel="noreferrer">Twitter</a></li>
       </ul>
     </nav>
   </footer>
 </body>
-
 </html>

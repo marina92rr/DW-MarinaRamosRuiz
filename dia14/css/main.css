@@ -1,0 +1,61 @@
+
+/* Reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cabecera de la página */
+main {
+    margin: 4rem;
+}
+
+.sidebar__ul {
+    height: 75px;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.sidebar__li {
+    list-style: none;
+}
+
+.sidebar__a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Cuerpo de la pagina inicio */
+a {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+h2, h3 {
+    text-align: center;
+    margin: 1rem;
+}
+.text__nowrap p {
+    width: 40%;
+    text-wrap: nowrap;
+}
+
+.text__hyphens p {
+    width: 40%;
+    hyphens:manual;
+}
+
+/* Pagina web volver */
+.return {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

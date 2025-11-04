@@ -1,0 +1,9 @@
+Obligaciones Proyecto:
+	- Comentar todo
+	- section/ article: h2
+	- <a: href/ rel:norefererr/ description/ title/ target:_blank> 
+	- figure> picture> 
+		<source(webp)/type>
+		<img : alt/ type>
+	 - No usar margin-top/bottom/left/right ----Usar padding: 0 0 0 0
+	 - No usar padding-top/bottom/left/right---- Usar margin: 0 0 0 0

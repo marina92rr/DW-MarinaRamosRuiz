@@ -6,6 +6,10 @@
     font-family: "Montserrat", sans-serif;
 }
 
+header, footer{
+    position: relative;
+    box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.34);
+}
 /* Cabecera de la página */
 .sidebar__ul {
     height: 75px;
@@ -41,14 +45,63 @@
     scroll-snap-align: start;
 }
 
-.Home {
-    background-color: rgb(238, 238, 238);
+/* Home de la página */
+.home__title {
+    color: white;
+    font-size: 100;
 }
 
-.News {
-   
+h2 {
+    margin: 0 0 2rem 0;
 }
 
-.Gallery {
-    background-color: rgb(238, 238, 238);
+.home {
+    background-image: url(../images/snow.jpg);
+    background-size:cover;
+}
+
+/* Noticias de la página */
+.news{
+    background-color: aliceblue;
+
+}
+.new {
+    margin: 7rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.news p {
+    width: 400px;
+    hyphens: auto;
+}
+
+.news img{
+    border-radius: 1rem;
+    width: 500px;
+}
+
+/* Galería de fotos */
+.galleries {
+    width: 60%;
+
+}
+.galleries--flex, .gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.gallery img {
+    border-radius: 0.8rem;
+    margin: 0.5rem;
+    width: 140px;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    box-shadow: 1px 1px 5px black;
+    transform: scale(1.1);
 }

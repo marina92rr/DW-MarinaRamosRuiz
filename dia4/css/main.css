@@ -43,7 +43,7 @@ a:hover {
 .found {
     background-image: 
         linear-gradient(to right, rgb(43, 29, 38), rgba(255, 255, 255, 0)),
-        url("/dia4/images/found.jpg");
+        url("../images/found.jpg");
     background-size: cover;
     height: calc(100vh - 125px);
     color: white;
@@ -58,8 +58,10 @@ a:hover {
 
 .container>p, .container>h1, .container>img, .container>button {
     margin: 15px 100px;
-    
+}
 
+.container>p{
+    font-size: x-small;
 }
 
 .container>img{

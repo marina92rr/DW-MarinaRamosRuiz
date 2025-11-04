@@ -49,7 +49,7 @@ ul {
 
 main {
     box-shadow: 2px 3px 10px rgb(180, 180, 180);
-    background-image: url(/dia11/images/found.jpg);
+    background-image: url(../images/found.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;

@@ -26,8 +26,10 @@ h1{
 
 .container--flex{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
+
 /* Ejercicio 1 */
 .container--1 {
     padding: 1rem;
@@ -67,6 +69,7 @@ h1{
     grid-row-start: 2;
     grid-row-end: 3;
 }
+
 .d{
     grid-column-start: 1;
     grid-column-end: 2;
@@ -91,37 +94,31 @@ h1{
 /* Ejercicio 3 */
 
 .a1{
-
     grid-column: 2/ 3;
     grid-row: 1/ 2;
 }
 
 .b1{
-
     grid-column: 2/ 3;
     grid-row: 2/ 3;
 }
 
 .c1{
-
     grid-column: 3/ 4;
     grid-row: 2/ 3;
 }
 
 .d1{
-
     grid-column: 1/ 2;
     grid-row: 1/ 2;
 }
 
 .e1{
-
     grid-column: 1/ 2;
     grid-row: 2/ 3;
 }
 
 .f1{
-
     grid-column: 3/ 4;
     grid-row: 1/ 2;
 }

@@ -42,6 +42,7 @@ h1{
 .box {
     box-shadow: 1px 1px 5px rgb(3, 36, 23);
     background-image: url(../images/plant-7.jpg);
+    background-size: cover;
     background-attachment: fixed;
     border-radius: 5px;
     padding: 40px;

@@ -7,3 +7,17 @@ Obligaciones Proyecto:
 		<img : alt/ type>
 	 - No usar margin-top/bottom/left/right ----Usar padding: 0 0 0 0
 	 - No usar padding-top/bottom/left/right---- Usar margin: 0 0 0 0
+Poner logo en svg
+texto alternativo
+Imagen:
+	loading='lazy' (imágenes que no aparecen al principio de la pag, se carga despues)
+	no pese mas de 900kb
+	no mas grande de 2000px
+	imágenes no pixeladas
+	usar symbol
+
+Video- no puede pesar mas de 4mb
+	No pixelado
+	etiqueta poster
+	controls
+	webp + mp4(2 formatos)

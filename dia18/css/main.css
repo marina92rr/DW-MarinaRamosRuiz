@@ -150,19 +150,40 @@ h1{
 }
 
 /* Rotaciones de div */
-.rotation{
+.rotation, .gradient{
+    transition: 2s;
     width: 100px;
     height: 100px;
 }
-
-.rotation:nth-child(1) {
+.rotation:nth-child(1), .gradient:nth-child(1) {
     background-color: rgb(115, 163, 156);
 }
 
-.rotation:nth-child(1) {
+.rotation:nth-child(2),  .gradient:nth-child(2) {
     background-color: rgb(67, 81, 79);
 }
 
-.rotation:nth-child(1) {
+.rotation:nth-child(3),  .gradient:nth-child(3) {
     background-color: rgb(152, 187, 182);
+}
+
+.rotation:nth-child(1):hover {
+    transition: 2s;
+    transform: rotate(100deg) scale(1.5);
+    transform-origin: center;
+    background-color: rgb(138, 159, 156);
+}
+
+.rotation:nth-child(2):hover {
+    transition: 2s;
+    transform: rotate(200deg) scale(2);
+    transform-origin: center;
+    background-color: rgb(42, 51, 50);
+}
+
+.rotation:nth-child(3):hover {
+    transition: 2s;
+    transform: rotate(300deg) scale(3);
+    transform-origin: center;
+    background-color: rgb(191, 236, 230);
 }

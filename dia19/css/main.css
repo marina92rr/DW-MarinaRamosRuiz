@@ -1,0 +1,205 @@
+/* Reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cabecera de la página */
+.sidebar {
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.204);
+}
+
+.sidebar__ul {
+    height: 5rem;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.sidebar__li {
+    list-style: none;
+}
+
+.sidebar__a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Cuerpo de la pagina INDEX */
+main {
+    min-height: calc(100vh - 190px);
+}
+
+h1 {
+    margin: 2rem;
+    text-align: center;
+}
+
+.container--flex {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 1rem;
+}
+
+.container {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.container:nth-child(1) {
+    background-color: rgb(56, 123, 154);
+    transition: width 2s;
+
+}
+
+.container:nth-child(2) {
+    background-color: rgb(26, 58, 73);
+    transition: height 2s;
+}
+
+.container:nth-child(3) {
+    background-color: rgb(45, 73, 87);
+    transition: width 2s, height 2s;
+}
+
+.container:nth-child(1):hover {
+    width: 200px;
+}
+
+.container:nth-child(2):hover {
+    height: 200px;
+}
+
+.container:nth-child(3):hover {
+    width: 200px;
+    height: 200px;
+}
+
+/* Color */
+.containera {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containera:nth-child(1) {
+    transition: background-color 1s;
+    background-color: black;
+}
+
+.containera:nth-child(2) {
+    transition: color 1s;
+    background-color: rgb(26, 58, 73);
+    color: rgb(26, 58, 73);
+}
+
+.containera:nth-child(1):hover {
+    background-color: rgb(56, 123, 154);
+}
+
+.containera:nth-child(2):hover {
+    color: white;
+}
+
+
+/* Cuerpo nivel 2 */
+@keyframes boxWidth {
+    from {
+        width: 50px;
+    }
+
+    to {
+        width: 200px;
+    }
+}
+
+@keyframes boxRotate {
+    from {
+        transform: rotate(90deg);
+    }
+
+    to {
+        transform: rotate(-90deg);
+    }
+}
+
+@keyframes boxColor {
+    from {
+        background-color: rgb(184, 107, 255);
+    }
+
+    to {
+        background-color: rgb(39, 12, 65);
+    }
+}
+
+.containerb {
+    width: 100px;
+    height: 6.25rem;
+}
+
+.containerb:nth-child(1) {
+    animation: boxWidth 2s ease-in-out infinite alternate;
+    background-color: rgb(184, 107, 255);
+}
+
+.containerb:nth-child(2) {
+    animation: boxRotate 2s ease-in-out infinite alternate;
+    background-color: rgb(91, 29, 149);
+}
+
+.containerb:nth-child(3) {
+    animation: boxColor 2s ease-in-out infinite alternate;
+    background-color: rgb(39, 12, 65);
+}
+
+/* Cambio de color animation */
+.containerc__h2{
+    margin: 3rem;
+    animation: h2Color .1s infinite alternate;
+    color: blueviolet;
+}
+
+@keyframes h2Color {
+    from {
+        color: white;
+    }
+
+    to {
+        color: blueviolet;
+    }
+}
+
+.containerc{
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+    animation: boxleft 2s ease-in-out infinite alternate;
+
+}
+
+@keyframes boxleft {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+}
+/* Cuerpo nivel 3 */
+
+/* Rotaciones de div */

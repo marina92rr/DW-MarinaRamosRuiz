@@ -187,3 +187,20 @@ h1{
     transform-origin: center;
     background-color: rgb(191, 236, 230);
 }
+
+.gradient:nth-child(1):hover {
+    background: linear-gradient(90deg,rgb(76, 147, 131) 50%, rgba(23, 122, 112, 1) 100%);
+
+}
+
+.gradient:nth-child(2):hover {
+    background: radial-gradient(circle,rgb(76, 147, 131) 50%, rgba(23, 122, 112, 1) 100%);
+
+ 
+}
+
+.gradient:nth-child(3):hover {
+    background: linear-gradient( 10deg,rgb(76, 147, 131) 50%, rgba(23, 122, 112, 1) 50%);
+
+
+}

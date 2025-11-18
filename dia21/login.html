@@ -17,33 +17,44 @@
 <body>
     <!-- Cabecera de la página-->
     <header>
-        <nav class="sidebar">
-            <ul class="sidebar__ul">
-                <li class="sidebar__li"><a href="./index.html" class="sidebar__a">Inicio</a></li>
-                <li class="sidebar__li"><a href="./race.html" class="sidebar__a">Razas de gatos</a></li>
-                <li class="sidebar__li"><a href="./contact.html" class="sidebar__a">Contacto</a></li>
-                <li class="sidebar__li"><a href="./adopt.html" class="sidebar__a">Adopta</a></li>
-                <li class="sidebar__li"><a href="./login.html" class="sidebar__a">Login</a></li>
-                <li class="sidebar__li"><a href="./login.html" class="sidebar__a">
-                    <input type="text" placeholder="Buscar...">
-                </a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Login</h1>
-        <div>
-            <form action="">
-                <input type="text" placeholder="Nombre de usuario">
-                <input type="password" placeholder="Contraseña">
-                <button type="submit">log in</button>
-                <a href="">¿ Has olvidado la contraseña?</a>
-                <a href="./register.html">Regístrate</a>
-            </form>
+        <!-- Menu inicial -->
+        <div class="sidebar">
+            <figure>
+                <img rel="preload" class="img__logo" src="images/logo.png" alt="Logotipo web gatos">
+            </figure>
+            <nav>
+                <ul class="sidebar__ul">
+                    <li class="sidebar__li"><a href="./index.html" class="sidebar__a">Inicio</a></li>
+                    <li class="sidebar__li"><a href="./race.html" class="sidebar__a">Razas de gatos</a></li>
+                    <li class="sidebar__li"><a href="./contact.html" class="sidebar__a">Contacto</a></li>
+                    <li class="sidebar__li"><a href="./adopt.html" class="sidebar__a">Adopta</a></li>
+                    <li class="sidebar__li"><a href="./login.html" class="sidebar__a isActive">Login</a></li>
+                </ul>
+            </nav>
+            <input class="sidebar__found found" type="text" placeholder="Buscar...">
         </div>
-        
+    </header>
+    <!-- Cuerpo de la pagina -->
+    <main class="login__height">
+    <!-- Formulario de login -->
+        <div class="login--flex">
+            <div>
+                <form class="login " action="./js/form-login.js" method="POST">
+                    <h1>Login</h1>
+                    <input type="text" placeholder="Nombre de usuario">
+                    <input type="password" placeholder="Contraseña">
+                    <button type="submit">log in</button>
+                    <!-- enlaces contraseña y crear cuenta -->
+                    <div class="login__as">
+                        <a href="">¿ Olvidé contraseña?</a>
+                        <a href="./register.html">Regístrate</a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
     </main>
-    <!-- Cabecera de la página-->
+    <!-- Pie de la página-->
     <footer>
         <nav class="sidebar">
             <ul class="sidebar__ul">

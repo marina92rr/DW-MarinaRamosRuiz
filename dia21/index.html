@@ -17,13 +17,14 @@
 <body>
     <!-- Cabecera de la página-->
     <header>
+        <!-- Menu inicial -->
         <div class="sidebar">
             <figure>
-                <img class="img__logo" src="images/logo.png" alt="japon">
+                <img rel="preload" class="img__logo" src="images/logo.png" alt="Logotipo web gatos">
             </figure>
             <nav>
                 <ul class="sidebar__ul">
-                    <li class="sidebar__li"><a href="./index.html" class="sidebar__a">Inicio</a></li>
+                    <li class="sidebar__li"><a href="./index.html" class="sidebar__a isActive">Inicio</a></li>
                     <li class="sidebar__li"><a href="./race.html" class="sidebar__a">Razas de gatos</a></li>
                     <li class="sidebar__li"><a href="./contact.html" class="sidebar__a">Contacto</a></li>
                     <li class="sidebar__li"><a href="./adopt.html" class="sidebar__a">Adopta</a></li>
@@ -43,7 +44,7 @@
                 uso que haya hecho de sus servicios.</p>
             <form method="dialog">
                 <button class="cookies__button">aceptar cookies <img
-                        src="https://img.icons8.com/?size=100&id=Eq5aUzFk6RKG&format=png&color=000000" alt=""></button>
+                        src="https://img.icons8.com/?size=100&id=Eq5aUzFk6RKG&format=png&color=000000" alt="galleta con chocolate"></button>
             </form>
         </dialog>
 
@@ -51,11 +52,11 @@
         <!-- Presentación del inicio -->
         <div class="presentation">
             <div class="container--center">
-                <h1>Bienvenido a la webMichi</h1>
-
+                <h1>Bienvenido a la MichiWeb</h1>
                 <a href="#news">
                     <picture>
-                        <img class="news__arrow" src="./images/arrow.png" alt="">
+                        <source rel="preload" class="news__arrow" srcset="./images/arrow.webp">
+                        <img rel="preload" class="news__arrow" src="./images/arrow.png" alt="">
                     </picture>
                 </a>
             </div>
@@ -64,22 +65,27 @@
         <!-- 3 Artículos -->
         <section id="news" class="news">
             <h2 class="news__title">Noticias curiosas</h2>
-            <div class="container__flex">
+            <div class="container__article">
                 <article class="new__article">
+                    <picture>
+                        <source type="image/webp" srcset="images/Xing-Zhilei.webp">
+                        <img src="images/Xing-Zhilei.png" alt="gato en un tren en miniatura">
+                    </picture>
                     <h3>Michilandia</h3>
                     <p>El creador chino Xing Zhilei ha dedicado dos años a construir toda una mini urbe para sus gatos:
                         hay
                         un supermercado, cine, banco y hasta un restaurante de “Meowdonalds” (juego de palabras con
-                        McDonald’s). Tiene un metro en miniatura que funciona con trenes, andenes y escaleras mecánicas.
+                        McDonald´s). Tiene un metro en miniatura que funciona con trenes, andenes y escaleras mecánicas.
                     </p>
-                    <a href="./new.html">+ info</a>
-                    <figure>
-                        <source type="image/webp" srcset="images/Xing-Zhilei.webp">
-                        <img src="images/Xing-Zhilei.png" alt="japon">
-                    </figure>
+                    <a class="article__more" href="./new.html">Seguir leyendo</a>
+
                 </article>
 
                 <article class="new__article">
+                    <picture>
+                        <source type="image/webp" srcset="images/tama.webp">
+                        <img src="images/tama.png" alt="gato con uniforme de jefe">
+                    </picture>
                     <h3>El gato alcalde</h3>
                     <p>En 2007 Tama fue una gata nombrada jefa de estación por “salvar” la línea ferroviaria Kishigawa
                         al
@@ -87,30 +93,28 @@
                         tomado el
                         relevo simbólicamente, con su propia gorra de jefe de estación, insignias oficiales y hasta su
                         caseta con vistas a los trenes.</p>
-                    <a href="./new.html">+ info</a>
-                    <figure>
-                        <source type="image/webp" srcset="images/tama.webp">
-                        <img src="images/tama.png" alt="japon">
-                    </figure>
+                    <a class="article__more" href="./new.html">Seguir leyendo</a>
+                    
                 </article>
 
                 <article class="new__article">
-                    <h3>Ladrón de zapatillas</h3>
+                    <picture>
+                        <source type="image/webp" loading='lazy' srcset="images/jordan.webp">
+                        <img src="images/jordan.png" loading='lazy' alt="Gato con muchas zapatillas">
+                    </picture>
+                    <h3>El ladrón de zapatillas</h3>
                     <p>Jordan, el gato, no sólo se roba los zapatos, sino toda clase de objetos que encuentra en los
                         jardines. Su humana hizo una página de Facebook para tratar de encontrar a los dueños de las
                         cosas.
                     </p>
-                    <a href="./new.html">+ info</a>
-                    <figure>
-                        <source type="image/webp" srcset="images/jordan.webp">
-                        <img src="images/jordan.png" alt="japon">
-                    </figure>
+                    <a class="article__more" href="./new.html">Seguir leyendo</a>
+                    
                 </article>
             </div>
-        </div>
+            </div>
 
     </main>
-    <!-- Cabecera de la página-->
+    <!-- Footer de la página-->
     <footer>
         <nav class="sidebar">
             <ul class="sidebar__ul">

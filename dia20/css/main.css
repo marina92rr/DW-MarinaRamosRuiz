@@ -1,0 +1,71 @@
+
+/* Reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+
+/* Cuerpo de la página */
+.container__flex{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.container__width{
+    width: 30%;
+}
+h2, h3 {
+    margin: 1rem;
+}
+
+form{
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 100%;
+   
+}
+
+input, textarea {
+    width: 100%;
+    display: flex;
+    padding: .7rem;
+    margin: 1rem 0;
+    border: none;
+    background-color: rgb(241, 238, 238);
+    border-radius: .4rem;
+}
+
+input:placeholder-shown {
+  border-color: rgb(131, 40, 40);
+}
+
+input:focus-within , textarea:focus-within {
+    background-color: white;
+    border: 0.1rem solid black;
+}
+
+form:focus-within {
+    background-color: rgb(65, 69, 95);
+}
+
+button {
+    width: 100%;
+    padding: .7rem;
+    background-color: rgb(67, 207, 76);
+    color: white;
+    border: none;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+
+button:hover {
+     background-color: rgb(58, 183, 66);
+}
+
+hr {
+    margin-top: 2rem;
+}

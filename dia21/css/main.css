@@ -7,28 +7,31 @@
 }
 
 /* Clases generales */
+/* Scroll suave */
+html {
+    scroll-behavior: smooth;
+}
 
 /* header */
 /* Menu con las categorias */
 .sidebar {
     position: sticky;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.455);
-    width: 100%;
-    height: 65px;
+    min-height: 65px;
     background-color: rgb(161, 82, 185);
+    padding: .8rem 0;
 }
 
-.img__logo{
+.img__logo {
     width: 5rem;
 }
 
 .sidebar__ul {
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 2rem;
 }
 
@@ -46,7 +49,12 @@
     color: rgb(76, 39, 87);
 }
 
-.sidebar__found{
+.isActive{
+    font-weight: 600;
+    color: rgb(76, 39, 87);
+}
+
+.sidebar__found {
     padding: 0 .4rem;
     height: 2rem;
     border-radius: 0.4rem;
@@ -56,6 +64,8 @@
 
 /* Cookies de inicio */
 .cookies {
+    z-index: 2;
+    width: 100%;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.726);
     text-align: center;
     border: none;
@@ -65,12 +75,13 @@
 }
 
 .cookies img {
-    width: 25px;
-    height: 25px;
+    margin: 0 .4rem;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .cookies__p {
-    margin: 0.5rem;
+    margin: 0.7rem;
     font-size: small;
 }
 
@@ -86,18 +97,17 @@
     color: white;
     padding: 5px;
     border-radius: 5px;
-    background-color:rgb(137, 66, 158);
+    background-color: rgb(137, 66, 158);
     border: 1px solid rgb(116, 61, 133);
 }
 
 .cookies__button:hover {
-     background-color:rgb(117, 56, 136);
+    background-color: rgb(117, 56, 136);
 }
 
-/* Cuerpo de la página Inicio*/
-
+/* Cuerpo de la página INICIO*/
 .presentation {
-    padding: 0 7rem ;
+    padding: 0 7rem;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -106,47 +116,51 @@
     background-image: url(./../images/found.jpg);
 }
 
-.container--center{
+.container--center {
     text-align: center;
 }
 
-.presentation h1{
+.presentation h1 {
     padding: 1rem 0;
     color: rgb(116, 61, 133);
-    text-shadow: 1px 1px 5px rgb(255, 255, 255);
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.525);
 }
 
 .presentation img {
     width: 4rem;
 }
-
-.news__arrow{
+/* Animación flecha */
+.news__arrow {
     animation: arrow 1s ease-in-out infinite alternate;
 }
 
 @keyframes arrow {
     from {
-      transform: translatey(100%);
+        transform: translatey(100%);
     }
     to {
-      transform: translatey(60%);
+        transform: translatey(60%);
     }
 }
 
+/* Noticias */
 .news__title {
+    font-size: xx-large;
     text-align: center;
     padding: 2rem;
+    color: rgb(88, 43, 102);
 }
 
-.container__flex{
+.container__article {
     padding: 2.5rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: rgb(161, 82, 185);
+    justify-content: center;
+    gap: 3rem;
+    background-color: rgb(218, 180, 230);
 }
 
-.new__article  {
+.new__article {
     padding: 1rem;
     width: 300px;
     background-color: white;
@@ -154,6 +168,180 @@
     box-shadow: 1px 1x 5px rgba(0, 0, 0, 0.582);
 }
 
+.new__article h3 {
+    margin: 1rem 0 .5rem 0;
+    color: rgb(161, 82, 185);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.173);
+}
+
+.new__article p {
+    font-size: small;
+    margin: 1rem 0;
+}
+
 .new__article img {
-    width: 250px;
+    width: 100%;
+    border-radius: .6rem;
+}
+
+.article__more {
+    color: black;
+    text-decoration: none;
+}
+
+.article__more:hover {
+    color: rgb(161, 82, 185);
+}
+
+/* NOTICIA */
+.michilandia--flex,
+.login--flex,
+.register--flex {
+    min-height: calc(100vh - 130px);
+    display: flex;
+    justify-content: center;
+    background-image: url(./../images/found-new.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.michilandia {
+    margin: 4rem;
+    padding: 4rem 5rem;
+    width: 60%;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.michilandia__title__primary {
+    margin: 5rem 0;
+}
+
+.michilandia__img img {
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 1px 1px 5px black;
+    margin: 2rem 0;
+}
+
+.michilandia p {
+    margin: 3rem 0;
+}
+
+.michilandia__video {
+    display: block;
+    margin: 0 auto;
+    border-radius: .7rem;
+    box-shadow: 1px 1px 5px black;
+}
+
+/* ---responsive NOTICIA--- */
+@media (max-width: 56.25rem) {
+    .michilandia {
+        width: 90%;
+    }
+}
+
+/* CONTACTO */
+.contact__title {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.Contact--flex {
+    display: flex;
+    justify-content: center;
+}
+
+.contact {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+}
+
+.contact p {
+    width: 300px;
+}
+
+.contact__img {
+    max-width: 500px;
+    min-width: 300px;
+    border-radius: 3rem;
+}
+
+.contact__img img,
+.contact__map iframe {
+    width: 100%;
+}
+
+.contact__map {
+    max-width: 900px;
+    min-width: 300px;
+    display: block;
+    margin: 3rem auto;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.293);
+}
+
+/* LOGIN + REGISTER*/
+/* Pantalla */
+.login__height, .register__height{
+    height: calc(100vh - 171px);
+}
+.container__flex {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login,
+.register {
+    background-color: white;
+    padding: 1rem;
+    margin: 5rem auto;
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.login input,
+.register input {
+    width: 18rem;
+    display: flex;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: none;
+    background-color: rgb(241, 238, 238);
+    border-radius: .4rem;
+}
+
+.login button,
+.register button {
+    width: 18rem;
+    padding: .7rem;
+    background-color: rgb(67, 207, 76);
+    color: white;
+    border: none;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+
+.login button:hover,
+.register button:hover {
+    background-color: rgb(58, 183, 66);
+}
+
+.login__as {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.login__as a {
+    text-decoration: none;
+    color: rgb(161, 82, 185);
 }

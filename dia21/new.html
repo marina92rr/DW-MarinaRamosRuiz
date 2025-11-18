@@ -17,26 +17,67 @@
 <body>
     <!-- Cabecera de la página-->
     <header>
-        <nav class="sidebar">
-            <ul class="sidebar__ul">
-                <li class="sidebar__li"><a href="./index.html" class="sidebar__a">Inicio</a></li>
-                <li class="sidebar__li"><a href="./race.html" class="sidebar__a">Razas de gatos</a></li>
-                <li class="sidebar__li"><a href="./contact.html" class="sidebar__a">Contacto</a></li>
-                <li class="sidebar__li"><a href="./adopt.html" class="sidebar__a">Adopta</a></li>
-                <li class="sidebar__li"><a href="./login.html" class="sidebar__a">Login</a></li>
-                <li class="sidebar__li"><a href="./login.html" class="sidebar__a">
-                    <input type="text" placeholder="Buscar...">
-                </a></li>
-            </ul>
-        </nav>
-   
-
+        <!-- Menu inicial -->
+        <div class="sidebar">
+            <figure>
+                <img rel="preload" class="img__logo" src="images/logo.png" alt="Logotipo web gatos">
+            </figure>
+            <nav>
+                <ul class="sidebar__ul">
+                    <li class="sidebar__li"><a href="./index.html" class="sidebar__a">Inicio</a></li>
+                    <li class="sidebar__li"><a href="./race.html" class="sidebar__a">Razas de gatos</a></li>
+                    <li class="sidebar__li"><a href="./contact.html" class="sidebar__a">Contacto</a></li>
+                    <li class="sidebar__li"><a href="./adopt.html" class="sidebar__a">Adopta</a></li>
+                    <li class="sidebar__li"><a href="./login.html" class="sidebar__a">Login</a></li>
+                </ul>
+            </nav>
+            <input class="sidebar__found found" type="text" placeholder="Buscar...">
+        </div>
     </header>
     <main>
-        <h1>Raza de gatos</h1>
-        
+        <!-- cuerpo de la página -->
+        <div class="michilandia--flex">
+            <!-- contenedor de la noticia -->
+            <div class="michilandia">
+                <!-- titulo principal -->
+                <h1 class="michilandia__title__primary">El 'youtuber' que ha construido una ciudad en miniatura para sus gatos: desde restaurantes hasta
+                    metro</h1>
+                <!-- titulo secundario -->
+                <h2>Este 'youtuber' ha creado una ciudad para sus mascotas con todos los detalles, como supermercados,
+                    estaciones de metro, cine y bares con mesas de billar</h2>
+                <!-- Imagen de michilandia -->
+                <picture class="michilandia__img">
+                    <source rel="preload" srcset="./images/new-michilandia.webp" type="img/webp">
+                    <img rel="preload" src="./images/new-michilandia.png" alt="" type="img/png" alt="Humano en estacion de tren en miniatura con su gato y gato en un macdonal en miniatura con hamster">
+                </picture>
+                <!-- Cuerpo de la noticia -->
+                <p>
+                    Un youtuber chino ha dedicado dos años a levantar una auténtica ciudad en miniatura para sus gatos,
+                    con supermercados, restaurantes, hogares completos y hasta un metro funcional. Los vídeos de este
+                    proyecto acumulan en su canal de YouTube, Xing's World, más de medio millón de seguidores.
+                </p>
+                <p>El creador es Xing Zhilei, que se presenta en su canal oficial con estas palabras: “Hola, soy Xing.
+                    Pasé dos años construyendo una minicasa para mis mascotas. ¡Me encanta crear y experimentar!”. En su
+                    espacio de YouTube comparte paso a paso la construcción de maquetas y proyectos diy que disfruta
+                    junto a su familia, gatos, perros y hámsteres.</p>
+                <!-- Video de la noticia -->
+                <video class="michilandia__video" controls muted autoplay>
+                    <source src="images/michilandia.webm" type="video/webm">
+                    <source src="images/michilandia.mp4" type="video/mp4">
+                </video>
+                <p>La minuciosidad de su trabajo queda reflejada en escenarios como fruterías, hoteles, cines, bares con
+                    mesas de billar o garajes. Todo está decorado con detalles realistas, desde columnas y señalización
+                    hasta ascensores o cocinas operativas. En uno de los vagones de su metro suena incluso la locución
+                    “Welcome to Cat Station”, mientras los gatos viajan o se colocan al frente del convoy.</p>
+                <p>Xing decidió emprender este proyecto porque quería que sus gatos pudieran vivir en una ciudad a su
+                    medida, un entorno diseñado para que explorasen, jugasen y conviviesen como si se tratara de un
+                    mundo real. Su intención era combinar su pasión por las maquetas con el amor hacia sus mascotas,
+                    creando espacios donde ellos fueran los auténticos protagonistas.</p>
+            </div>
+        </div>
+
     </main>
-    <!-- Cabecera de la página-->
+    <!-- Pie de la página-->
     <footer>
         <nav class="sidebar">
             <ul class="sidebar__ul">

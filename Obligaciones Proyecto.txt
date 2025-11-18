@@ -21,3 +21,5 @@ Video- no puede pesar mas de 4mb
 	etiqueta poster
 	controls
 	webp + mp4(2 formatos)
+
+Formulario- Añadir fichero/ put/ get/ post

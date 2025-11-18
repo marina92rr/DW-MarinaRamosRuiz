@@ -61,7 +61,6 @@ html {
     border: none;
 }
 
-
 /* Cookies de inicio */
 .cookies {
     z-index: 2;
@@ -344,4 +343,9 @@ html {
 .login__as a {
     text-decoration: none;
     color: rgb(161, 82, 185);
+}
+
+/* cuerpo ADOPTA */
+.adopt, .race {
+    height: calc(100vh - 175px);
 }

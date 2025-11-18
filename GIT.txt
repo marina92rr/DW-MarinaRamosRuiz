@@ -1,0 +1,6 @@
+GIT
+Master - Rama principal
+Hotfix - Fallo en caliente(Cambio rápido y pequeño)
+Realese - Testing, versiones finales
+develop - Proyecto en segundo plano
+feature - Rama

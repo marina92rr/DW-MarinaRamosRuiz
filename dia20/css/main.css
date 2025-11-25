@@ -29,23 +29,21 @@ form{
    
 }
 
+
 input, textarea {
     width: 100%;
     display: flex;
     padding: .7rem;
     margin: 1rem 0;
     border: none;
-    background-color: rgb(241, 238, 238);
+    background-color: rgb(196, 196, 196);
     border-radius: .4rem;
 }
 
+/* Campos que estan escritos */
 input:placeholder-shown {
-  border-color: rgb(131, 40, 40);
-}
-
-input:focus-within , textarea:focus-within {
-    background-color: white;
-    border: 0.1rem solid black;
+  border-color: #dfdfdf;
+  background-color: #fafafa;
 }
 
 form:focus-within {

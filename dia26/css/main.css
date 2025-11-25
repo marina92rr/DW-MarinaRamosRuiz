@@ -1,0 +1,82 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+div {
+    margin: 20px;
+    padding: 40px;
+}
+
+.hello {
+    display: flex;
+    justify-content: center;
+}
+
+/*Primer div*/
+div:first-child {
+    background-color: rgb(214, 247, 222);
+}
+
+/* titulos */
+.title:hover{
+    color: rgb(170, 0, 255);
+    cursor: pointer;
+}
+
+img{
+    width: 200px;
+    height: auto;
+}
+
+/*Segundo div*/
+div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    background-color:rgb(240, 253, 249);
+    border: 1px solid rgb(219, 236, 231) ;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+p{
+    width: 50%;
+}
+div:nth-child(2):active{
+    background-color:rgb(219, 236, 231);
+
+}
+
+/*Tercer div*/
+div:nth-child(3) {      
+    background-color:rgb(240, 240, 253);
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    width: 50%;
+    border-collapse: collapse;      /*Elimina espacio entre celdas*/
+    border: 3px solid rgb(212, 212, 247);
+    background-color: white;
+   
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid rgb(212, 212, 247);
+    cursor: pointer;
+}
+
+tr:hover td{
+    background-color: aliceblue;
+}
+
+span {
+    color: red;
+    font-weight: bold;
+}
+

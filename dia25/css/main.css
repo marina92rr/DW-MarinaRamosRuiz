@@ -1,0 +1,14 @@
+
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    margin: 2rem 0 ;
+    padding: 2rem;
+    background-color: antiquewhite;
+    border-radius: .7rem;
+}
+

@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+h2,
+button {
+    text-align: center;
+    margin: 2rem;
+}
+
+.btn {
+    text-align: center;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.322);
+    border-radius: .4rem;
+    padding: .5rem;
+    cursor: pointer;
+    background-color: rgb(80, 146, 168);
+    color: white;
+    border: none;
+}
+
+.btn:hover {
+    background-color: rgb(66, 66, 66);
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.foundColor {
+    width: 100px;
+    height: 100px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.322);
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: .4rem;
+}

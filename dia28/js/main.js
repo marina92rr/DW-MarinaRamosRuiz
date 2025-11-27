@@ -27,11 +27,12 @@ const divFound = document.querySelectorAll(".foundColor");
 
 //Función crear color aleatorio con numeros y cambiar los div
 function bgChangeColorFound() {
-    const color = `rgb(${colorRandom(255)}, ${colorRandom(255)}, ${colorRandom(255)})`
-    divFound.forEach( div => div.style.backgroundColor = color);
+    divFound.forEach( div => div.style.backgroundColor = `rgb(${colorRandom(255)}, ${colorRandom(255)}, ${colorRandom(255)})`);
 }
 
 btnFound.addEventListener("click", bgChangeColorFound)
+
+
 
 
 

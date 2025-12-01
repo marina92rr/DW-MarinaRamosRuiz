@@ -32,9 +32,4 @@ function bgChangeColorFound() {
 
 btnFound.addEventListener("click", bgChangeColorFound)
 
-
-
-
-
-
 //Nivel 3

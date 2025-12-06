@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+h1, h2, h3 {
+    text-align: center;
+    margin: 2rem;
+}
+
+hr{
+    margin: 3rem 0;
+}
+
+/* Nivel 1 y 2*/
+.level {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.botonBlue {
+    color: white;
+    background-color: rgb(43, 134, 226);
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: none;
+}
+
+.botonBlue:hover {
+    background-color: rgb(79, 164, 249);
+}
+
+.divNum{
+    font-weight: 800;
+    width: 100px;
+    height: 100px;
+    color: white;
+    background-color: rgb(191, 148, 231);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Nivel 3*/
+.operator{
+    color: white;
+    background-color: rgb(43, 134, 226);
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: none;
+}
+
+input {
+    width: 6rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: none;
+    background-color: rgb(221, 233, 246);
+}
+
+strong{
+    color: rgb(27, 103, 179);
+    font-size: xx-large;
+}

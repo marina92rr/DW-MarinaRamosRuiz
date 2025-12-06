@@ -1,0 +1,57 @@
+<!DOCTYPE hmtl>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Día 30</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <h1>Día 30</h1>
+        <h2>Nivel 1: </h2>
+        <div class="level">
+            <button class="botonBlue" id="open">Open</button>
+            <button class="botonBlue" id="close">Close</button>
+            <button class="botonBlue" id="move">Move</button>
+            <button class="botonBlue" id="resize">Resize</button>
+            <button class="botonBlue" id="location">Location</button>
+        </div>
+        <hr>
+        <h2>Nivel 2: </h2>
+        <div class="level">
+            <button class="botonBlue" id="btnNum">Cambia los numeros</button>
+            <div class="divNum">1</div>
+            <div class="divNum">2</div>
+            <div class="divNum">3</div>
+            <div class="divNum">4</div>
+            <div class="divNum">5</div>
+        </div>
+        <hr>
+        <h2>Nivel 3: Calculadora</h2>
+        <div class="level">
+            <form id="calc" action="">
+                <input id="numA" type="number" placeholder="0">
+                <input id="numB" type="number" placeholder="0">
+                <select class="operator" id="operator">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="/">/</option>
+                    <option value="*">*</option>
+                </select>
+                <button class="botonBlue" type="submit">Calcular</button>
+                <h3>Resultado = <strong id="res">0</strong> </h3>
+            </form>
+        </div>
+
+    </main>
+</body>
+
+</html>

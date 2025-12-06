@@ -1,0 +1,44 @@
+/* Reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.acordeon {
+    width: 90%;
+    max-width: 120em;
+    background-color: white;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.238);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.acordeon .bloque {
+    background-color: white;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.238);
+    border-radius: 1rem;
+    margin: 0 0 1em;
+    padding: 1rem;
+}
+
+.acordeon .h2 {
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.238);
+    border-radius: 1rem;
+    background-color: rgb(249, 249, 249);
+    margin: 0 0 1em;
+    padding: 1rem;
+}
+
+.acordeon .contenido {
+    border-radius: 1rem;
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
+.acordeon .bloque.activo .contenido {
+    height: 4em;
+}

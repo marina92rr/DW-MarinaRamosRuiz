@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin: 2rem;
+}
+h4{
+    margin: .6rem;
+    color: blueviolet;
+}
+
+hr{
+    margin: 2rem 0;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+li{
+    padding: .6rem;
+    border-radius: .6rem;
+    list-style: none;
+    min-width: 100px;
+    min-height: 50px;
+}
+
+.emoji{
+    border-radius: .6rem;
+    padding: 1rem;
+    box-shadow: 1px 1px 10px rgb(228, 124, 180);
+}
+
+button {
+    cursor: pointer;
+    padding: .5rem;
+    border-radius: .6rem;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+}
+
+button:hover{
+    background-color: rgb(160, 82, 234);
+}
+
+.divObject {
+    text-align: center;
+    padding: .6rem;
+    min-width: 150px;
+    min-height: 100px;
+    border: 1px solid black;
+    border-radius: .6rem;
+}

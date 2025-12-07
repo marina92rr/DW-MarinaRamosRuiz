@@ -3,4 +3,102 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: none;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+.grid {
+    width: 90%;
+    max-width: 56.25rem;
+    margin: 1rem auto;
+    padding: 1rem;
+
+    display: flex;
+    gap: 1rem;
+}
+
+.grid .img {
+    background-color: orange;
+    box-shadow: .5rem .5rem 1rem #bebebe,
+        -.5rem -.5rem 1rem #ffffff;
+
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+}
+
+.grid .img:hover {
+    transform: scale(.95);
+}
+
+.grid .img:active {
+    transform: scale(1.1);
+}
+
+img {
+    width: 300px;
+}
+
+/* Lightbox styles*/
+.lightbox {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0, 0, .4);
+    backdrop-filter: blur(2rem);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    opacity: 0;              /*Oculto por defecto */
+    pointer-events: none;   /*Desactiva eventos del mouse */
+}
+
+.lightbox.isActive {
+    opacity: 1;
+    pointer-events: auto;   /*Activa eventos del mouse */
+    transition: all 0.5s ease;
+
+}
+
+.lightbox .close {
+    width: 3rem;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.lightbox .close:hover {
+    transform: scale(.95);
+}
+
+.lightbox .close:active {
+    transform: scale(1.1);
+}
+
+.lightbox .svg{
+}
+.lightbox .grande{
+    width: 90%;
+    max-width: 900px;
+    height: 70vh;
+    box-shadow: 0 0 2rem 0 rgba(0,0, 0, .4);
 }

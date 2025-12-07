@@ -8,14 +8,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script src="js/main.js" defer></script>
+    <script defer src="js/main.js" defer></script>
 </head>
 
 <body>
     <!-- Cabecera de la página -->
     <header></header>
     <!-- Cuerpo de la página -->
-    <main></main>
+    <main>
+        <div class="grid">
+            <img class="img" src="./images/img-1.jpg" alt="cuadros 1">
+            <img class="img" src="./images/img-2.jpg" alt="cuadros 2">
+            <img class="img" src="./images/img-3.jpg" alt="cuadros 3">
+
+        </div>
+        <div class="lightbox">
+            <button class="close">
+                <svg xmlns="http://www.w3.org/2000/svg" class="svg" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                </svg>
+            </button>
+            <img class="grande" alt="imagen ampliada">
+        </div>
+    </main>
     <!-- Pie de la página -->
     <footer></footer>
 </body>

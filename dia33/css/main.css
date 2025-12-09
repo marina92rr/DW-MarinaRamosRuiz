@@ -14,9 +14,11 @@ h1, h2, h3, h4 {
 @keyframes girarScalarOpacidad {
   from {
     transform: rotate(0deg) scale(0);
+    opacity: 0;
   }
   to {
     transform: rotate(360deg) scale(1);
+    opacity: 1;
   }
 }
 

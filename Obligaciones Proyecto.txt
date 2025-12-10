@@ -23,3 +23,5 @@ Video- no puede pesar mas de 4mb
 	webp + mp4(2 formatos)
 
 Formulario- Añadir fichero/ put/ get/ post
+
+intersectionObserver entra en el examen y bueno para el proyecto

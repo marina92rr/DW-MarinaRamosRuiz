@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 1rem;
+  color: blueviolet;
+}
+
+/* Nivel 1*/
+/*Menu y submenu */
+
+header {
+  margin: auto;
+  width: 100%;
+
+}
+
+.sidebar, .sidebar__sub {
+  width: 100%;
+  list-style: none;
+  background-color: rgb(45, 189, 131);
+  display: flex;
+}
+
+
+.sidebar__a {
+  background-color: rgb(45, 189, 131);
+  color: white;
+  text-decoration: none;
+  padding: .7rem .8rem;
+  display: block;
+}
+
+.sidebar__a:hover {
+  background-color: rgb(37, 151, 105);
+  border-radius: .3rem;
+}
+
+.sidebar__li ul {
+  display: none;
+  position: absolute;
+  min-width: 8.75rem;
+}
+
+.sidebar__li:hover>ul {
+  display: block;
+}
+
+.sidebar li ul li {
+  position: relative;
+}
+
+/*Imagen lightBox*/
+img {
+  margin: 1rem;
+  width: 300px;
+  border-radius: .5rem;
+}
+
+/* Lightbox manual */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 150px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: .5rem;
+  transition: transform .2s, box-shadow .2s;
+}
+
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE hmtl>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Día 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/main.js" defer></script>
+
+    <!-- Swipper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- Titulo web -->
+    <main>
+        <div>
+            <h1>Día 3</h1>
+            <hr>
+            <h3>Nivel 1</h3>
+            <div>
+                <h4>Crea un slide con swiper</h4>
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="images/rana-1.jpg" alt="Dos ranas"></div>
+                        <div class="swiper-slide"><img src="images/rana-2.jpg" alt="Dos ranas"></div>
+                        <div class="swiper-slide"><img src="images/rana-3.jpg" alt="Dos ranas"></div>
+                        ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+            <div>
+                <h4>Crea un slide manual</h4>
+                <!-- Slider main container -->
+                <div class="slideshow__container">
+                    <div class="my__slides fade">
+                        <div class="numbertext"></div>
+                        <img src="images/camaleon-1.jpg" style="width:100%" alt="">
+                    </div>
+
+                    <div class="my__slides fade">
+                        <div class="numbertext"></div>
+                        <img src="images/camaleon-2.jpg" style="width:100%" alt="">
+                    </div>
+
+                    <div class="my__slides fade">
+                        <div class="numbertext"></div>
+                        <img src="images/camaleon-3.jpg" style="width:100%" alt="">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+
+            <h3>Nivel 2</h3>
+            <div>
+                <h4>Carrusel</h4>
+                <div id="container">
+                    <div id="carrusel__container">
+                        <span onclick="carruselRight()" class="btn"></span>
+                        <div id="carruselr">
+                            <div class="carrusel"><span>1</span></div>
+                            <div class="carrusel"><span>2</span></div>
+                            <div class="carrusel"><span>3</span></div>
+
+                        </div>
+                        <span onclick="carruselLeft()" class="btn"></span>
+
+                    </div>
+                </div>
+            </div>
+
+            <h3>Nivel 3</h3>
+        </div>
+    </main>
+
+
+
+
+
+
+</body>
+
+</html>

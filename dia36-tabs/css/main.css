@@ -1,0 +1,84 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h1{
+  margin: 1rem;
+}
+
+
+.flex{
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+[role='tablist']{
+  padding: 1rem 0;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  
+}
+
+[role='tab']{
+  border: none;
+  background-color:rgb(0, 191, 255);
+  padding: 1rem;
+  border-radius: .5rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+[role='tab']:hover{
+  background-color:rgb(38, 125, 154);
+}
+
+[role='tabpanel']{
+  transform: translateY(100%);
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+[role='tabpanel'].active{
+  transform: translateY(0);
+  opacity: 1;
+  height: auto;
+}
+
+/*Level 1.2*/
+img{
+  max-width: 200px;
+}
+
+.container__card {
+  position: relative;
+  perspective: 1000px;
+  max-width: 200px;
+  height: 250px;
+}
+
+.container__card:hover .card {
+    transform: rotateY(180deg);
+}
+
+.card {
+  transform-style: preserve-3d;
+  transition: all 0.5s linear;
+}
+
+.front {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front.back {
+  transform: rotateY(180deg);
+}

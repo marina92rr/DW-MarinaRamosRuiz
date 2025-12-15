@@ -1,9 +1,12 @@
 TAREAS SIN TERMINAR
-28
+28-l3
 31
 32
 33-nivel 3
+34-l2 l3
+35-l2 l3
 
 Asincrona mejorar
 4 - acordeon….optimizar condicione
 5 - animaciones y js
+6 - 

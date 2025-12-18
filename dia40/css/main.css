@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.header,
+.footer {
+    height: 4.375rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.header__logo {
+    width: 70px;
+    height: auto;
+}
+
+.sidebar__ul {
+    display: flex;
+    gap: 4rem;
+}
+
+
+.sidebar__a:hover {
+    border-bottom: 1px solid rgb(154, 87, 20);
+    color: rgb(154, 87, 20);
+}
+
+/* Cuerpo de las páginas */
+.main {
+    min-height: calc(100vh - 140px);
+    background-color: rgb(242, 225, 209);
+}
+
+
+/* Pie de la página */

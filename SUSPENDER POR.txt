@@ -1,0 +1,36 @@
+SUSPENDER POR:
+No poner url en memoria
+Espacios en los nombres de archivos
+responsive- 
+	no se puede solapar nada
+	Padding y márgenes
+
+Scroll - lateral NO
+Menu hamburguesa
+
+Pantallas - 2k y 4k probar, Tablet, Móviles, 
+
+Pasar por Edge, Chrome, Safari y Firefox
+Pasar por las validaciones del asíncrono 2
+input con label
+ul no puede tener nada solo lis
+https://metatags.io/ importante
+h1- por página
+si quiero un botón que me lleve a un sitio tipo enlace pero no tiene js, NO es botón, es un enlace con apariencia de bo´ttón
+PESO IMG - 900k 
+TAMAÑO 2000x2000 px
+Logo- SVG
+VIDEO entre 1mb y 4mb
+hr ya no se usa, usar border-top 
+NO usar transition all
+iframe - Es mapa o video
+pasar por lighthouse
+Todo código debe estar en iife :
+// standard IIFE
+(function () {
+  // todo el código js
+})();
+Todos los nombres de la funciones en camelCase
+
+
+
